@@ -9,5 +9,3 @@ Hướng dẫn chạy chương trình:
   + Các service con chạy bằng Springboot
   + Cài đặt RabbitMQ để xử lý giao tiếp bất đồng bộ
   + Thư mục frontend đặt trong môi trường xampp/htdocs
-
-Báo cáo: 
