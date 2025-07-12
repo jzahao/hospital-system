@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Josefin Sans, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  color: #333;
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  background: white;
+  padding: 0 20px;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: #9f9f9f solid 2px;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus {
+  border-color: #2c5364;
+}
+
+button,
+.button-area a {
+  font-family: Josefin Sans, sans-serif;
+  font-size: 18px;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+button:hover {
+  background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #203a43;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.home-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  padding: 0 100px;
+  gap: 48px;
+}
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 36px;
+}
+
+.home-title p {
+  font-weight: 900;
+  color: white;
+}
+
+.home-title p:first-child {
+  font-weight: 200;
+  font-size: 46px;
+}
+
+.home-title p:last-child {
+  text-transform: uppercase;
+  letter-spacing: -6px;
+  font-size: 72px;
+}
+
+.home-login {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.home-login p {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #f2c94c;
+}
+
+.home-login button {
+  padding: 12px 16px;
+  font-size: 18px;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+}
+
+.home-login button:hover {
+  background: linear-gradient(to left, #f2994a, #f2c94c);
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.form-boundary {
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.form-boundary button,
+.button-area a {
+  margin-top: 12px;
+}
+
+.app-header {
+  color: white;
+  padding: 16px 40px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.app-header .app-name {
+  font-family: Anton, sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.app-header .user-info span {
+  background-color: white;
+  color: #333;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+.app-header .user-info a {
+  font-weight: 600;
+  color: white;
+  padding: 12px 16px;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.app-header .user-info a:hover {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+.dashboard {
+  margin-top: 100px;
+  padding: 60px;
+}
+
+.dashboard h2 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: 900;
+  border-bottom: 4px solid #333;
+}
+
+.dashboard ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 28px;
+}
+
+.dashboard li {
+  list-style-type: none;
+  width: 18%;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  border-radius: 12px;
+}
+
+.dashboard li:hover {
+  background: linear-gradient(to right, #0575e6, #00f260);
+}
+
+.dashboard li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 20px;
+  gap: 20px;
+  color: white;
+}
+
+.dashboard li a span {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.dashboard li a i {
+  font-size: 36px;
+}
+
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.patient-add-container,
+.appointment-add-container,
+.appointment-edit-container,
+.prescription-add-container,
+.prescription-edit-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.appointment-list-container,
+.doctor-appointments-container,
+.patient-search-container,
+.doctor-prescriptions-container,
+.prescription-list-container,
+.admin-statistics-container {
+  margin-top: 120px;
+  padding: 10px 60px;
+}
+
+.appointment-list-container h2,
+.doctor-appointments-container h2,
+.doctor-prescriptions-container h2,
+.prescription-list-container h2,
+.admin-statistics-container h2 {
+  margin-bottom: 20px;
+}
+
+.button-in-table {
+  padding: 6px 8px;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  color: white;
+  border-radius: 4px;
+}
+
+.prescription-add-container .patient-info {
+  width: fit-content;
+  padding: 8px 10px 6px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid black;
+  margin-bottom: 4px;
+}
+
+.search-form {
+  flex-direction: row;
+  background: transparent;
+  width: 100%;
+  padding: 0;
+  gap: 12px;
+  margin-top: 16px;
+  justify-content: flex-end;
+}
+
+.search-form input {
+  width: 360px;
+  padding: 12px 16px;
+}
+
+.search-form label {
+  text-align: right;
+  width: fit-content;
+}
+
+.stat-tables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  margin-top: 40px;
+}
+
+.table-element {
+  width: 49%;
+}
+
+.table-element h3 {
+  margin-bottom: 12px;
+}
+
+.table-element tr {
+  text-align: center;
+}
+
+.stat-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.stat-title input {
+  width: 120px;
+}
+
+.stat-title h2 {
+  width: 100%;
+  margin: 0;
+  font-size: 48px;
+}
